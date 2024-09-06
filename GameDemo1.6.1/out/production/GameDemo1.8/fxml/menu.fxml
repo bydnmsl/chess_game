@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="858.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.controller.MenuController">
+    <children>
+        <Pane prefHeight="858.0" prefWidth="640.0">
+            <children>
+                <ImageView fitHeight="858.0" fitWidth="640.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/menu_background.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="local_btn" fitHeight="111.0" fitWidth="417.0" layoutX="112.0" layoutY="318.0" onMouseClicked="#localGame" onMouseEntered="#localEntered" onMouseExited="#localExited" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/start_btn.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="ai_btn" fitHeight="111.0" fitWidth="417.0" layoutX="112.0" layoutY="442.0" onMouseClicked="#aiGame" onMouseEntered="#aiEntered" onMouseExited="#aiExited" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/ai_btn.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="net_btn" fitHeight="111.0" fitWidth="417.0" layoutX="112.0" layoutY="566.0" onMouseClicked="#netGame" onMouseEntered="#netEntered" onMouseExited="#netExited" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/net_btn.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="escape_btn" fitHeight="111.0" fitWidth="417.0" layoutX="112.0" layoutY="690.0" onMouseClicked="#escGame" onMouseEntered="#escEntered" onMouseExited="#escExited" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/exit_btn.png" />
+                    </image>
+                </ImageView>
+            </children></Pane>
+    </children>
+</AnchorPane>
